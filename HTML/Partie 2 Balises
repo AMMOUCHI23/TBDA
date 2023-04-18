@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Balises HTML</title>
+    </head>
+    <BOdy>
+        <h1>Balises HTML</h1>
+        <a href="mailto:afpa@hotmail.fr?subject=Demande de contacte" title="Nous contacter">Ecriver nous</a>
+        
+
+
+        <p>
+            Une page web est composée comme nous l'avons vu au chapitre
+             précédent d'une partie entête (métadonnées) et du corps 
+             du document pour le contenu, comprise dans la balise Body.
+        </p>
+
+        
+        <img src="image.jpeg" alt="image des chiens">
+    </BOdy>
+</html>

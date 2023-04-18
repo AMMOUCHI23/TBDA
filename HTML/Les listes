@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Les listes</title>
+    </head>
+    <body>
+        <center><h1>Les listes numérotées</h1></center>
+        <ol type="A">
+            <li>Souris</li>
+            <li>Chiens</li>
+            <ol>
+               <li>Bassets</li>
+               <li>Caniches</li>
+            </ol>
+            <li>Félins</li>
+            <ol type="1">
+                <li>Lions</li>
+                <li>Tigres</li>
+                <li>Chats</li>
+                <OL type="I">
+                   <li>Chats sauvages</li>
+                   <li>Chats domestiques</li>
+                </OL>
+
+            </ol>
+            <li>Chevaux</li>
+
+        </ol>
+        <center><h1>Les listes non classées</h1></center>
+        <ul>
+            <li>Souris</li>
+            <li>Chiens</li>
+            <ul type="circle">
+               <li>Bassets</li>
+               <li>Caniches</li>
+            </ul>
+            <li>Félins</li>
+            <ul type="circle">
+                <li>Lions</li>
+                <li>Tigres</li>
+                <li>Chats</li>
+                <uL type="square">
+                   <li>Chats sauvages</li>
+                   <li>Chats domestiques</li>
+                </uL>
+                
+
+            </ul>
+            <li>Chevaux</li>
+
+        </ul>
+    </body>
+
+</html>

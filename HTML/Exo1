@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Ma première page en HTML 5</title>
+</head>
+<body>
+    <!-- Debut de la balise head -->
+  <h1>Le HTML 5</h1>
+  <p>Le langage HTML, c'est fantastique.</p> 
+  <h1>Titre H1 très important</h1>
+<h2>Titre H2 moins important que H1</h2> 
+<h3>Titre H3 moins important que H2</h3> 
+<h4>Titre H4 moins important que H3</h4> 
+<h5>Titre H5 moins important que H4</h5> 
+<h6>Titre H6 moins important que H5</h6>
+  </body>
+</html>
