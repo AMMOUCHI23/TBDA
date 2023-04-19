@@ -5,20 +5,20 @@
   <title>Jarditou</title>
 </head>
 <body>
-  <thead>
+  
     <img src="/home/stagiaire/TBDA/HTML/JARDITOU/assets/img/Logo_jarditou.png" alt="Logo Jarditou" title="Logo Jarditou" >
     <p>La qualité depuis 70 ans</p>
 
     <ul>
-      <li><a href="/home/stagiaire/TBDA/HTML/JARDITOU/assets/index" title="accueil">Accueil</a></li>
-      <li><a href="/home/stagiaire/TBDA/HTML/JARDITOU/assets/tableau" title="tableau">Tableau</a></li>
-      <li><a href="/home/stagiaire/TBDA/HTML/JARDITOU/assets/contact" title="contact">Contact</a></li>
+      <li><a href="" title="accueil" target="_parent">Accueil</a></li>
+      <li><a href="/home/stagiaire/TBDA/HTML/JARDITOU/assets/tableau" title="tableau" target="_blank">Tableau</a></li>
+      <li><a href="/home/stagiaire/TBDA/HTML/JARDITOU/assets/contact" title="contact" target="_blank">Contact</a></li>
     </ul>
-    <img src="/home/stagiaire/TBDA/HTML/JARDITOU/assets/img/Promotion sur lames de terrasse.png" alt="promotion sur les lames de terrasse" title="Promotion sur lames de terrasse">
+    <img src="/home/stagiaire/TBDA/HTML/JARDITOU/assets/img/promotion.png" alt="promotion sur les lames de terrasse" title="Promotion sur lames de terrasse">
     <h2>Accueil</h2>
     <hr>
-  </thead>
-  <tbody>
+  
+  
     <h3>Lentreprise</h3>
     <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et de paysagisme.</p>
     <p> Créée il y a 70 ans, notre entreprise vend fleurs,arbustes,matériel à main et motorisé. </p> 
@@ -32,15 +32,15 @@
     </p>
     <hr>
     
-  </tbody>
-  <tfoot>
+  
+  
     <ul>
       <li><a href="">Mention légales</a></li>
       <li><a href="">Horaires</a></li>
       <li><a href="">Plan du site</a></li>
     </ul>
     
-  </tfoot>
+  
     
-</body>
+  </body>
 </html>

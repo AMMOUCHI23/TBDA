@@ -6,7 +6,7 @@
 </head>
 <body>
     <form action="" method="post">
-        <label for="debut">* Ces zones sont obligatoires</label>
+        <p>* Ces zones sont obligatoires</p>
         <fieldset>
             <legend>Vos coordonnées</legend>
             <label for="name">Votre nom* : </label><input type="text" name="nom"><br>
@@ -31,7 +31,9 @@
                 <option value="Reclamation" >Réclamation</option>
                 <option value="Autres" >Autres</option> 
                 
-            </select>
+            </select><br>
+            <label for="sujet">Votre question* : </label>
+            <textarea name="question" id="question" cols="20" rows="1"></textarea>
             
         </fieldset>
         <input type="checkbox" name="accepter" id="accepter"><label for="accepter">* Jaccepte le traitement informatique de ce formulaire</label><br>

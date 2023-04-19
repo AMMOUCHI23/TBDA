@@ -5,35 +5,32 @@
   <title>Jarditou</title>
 </head>
 <body>
-  <thead>
     <img src="/home/stagiaire/TBDA/HTML/JARDITOU/assets/img/Logo_jarditou.png" alt="Logo Jarditou" title="Logo Jarditou" >
     <p>La qualité depuis 70 ans</p>
 
     <ul>
-      <li><a href="">Accueil</a></li>
-      <li><a href="">Tableau</a></li>
-      <li><a href="">Contact</a></li>
+        <li><a href="" title="accueil" target="_parent">Accueil</a></li>
+        <li><a href="/home/stagiaire/TBDA/HTML/JARDITOU/assets/tableau" title="tableau" target="_blank">Tableau</a></li>
+        <li><a href="/home/stagiaire/TBDA/HTML/JARDITOU/assets/contact" title="contact" target="_blank">Contact</a></li>
     </ul>
-    <img src="/home/stagiaire/TBDA/HTML/JARDITOU/assets/img/Promotion sur lames de terrasse.png" alt="promotion sur les lames de terrasse" title="Promotion sur lames de terrasse">
+    <img src="/home/stagiaire/TBDA/HTML/JARDITOU/assets/img/promotion.png" alt="promotion sur les lames de terrasse" title="Promotion sur lames de terrasse">
     <h2>Contact</h2>
     <hr>
-  </thead>
-  <tbody>
     
-    <form action="" method="post">
-        <label for="debut">* Ces zones sont obligatoires</label>
+    <form action="destination.php" method="post">
+        <p>* Ces zones sont obligatoires</p>
         <fieldset>
             <legend>Vos coordonnées</legend>
-            <label for="name">Votre nom* : </label><input type="text" name="nom"><br>
-            <label for="prenom">Votre prénom* : </label><input type="text" name="prenom"><br>
-            <label for="sex">Sex* :</label>
-            <input type="radio" name="sex" value="féminin" >Féminin
-            <input type="radio" name="sex" value="Masculin">Masculin <br>
-            <label for="naissance">Date de naissance* : </label><input type="date" name="naissance"><br>
-            <label for="code">Code postal* : </label><input type="text" name="code"><br>
-            <label for="adresse">Adresse : </label><input type="text" name="adresse"><br>
-            <label for="ville">Ville : </label><input type="text" name="ville"><br>
-            <label for="email">Email* : </label><input type="text" name="email" placeholder="dave.loper@afpa.fr"><br>
+            <label for="nom" >Votre nom* : </label><input type="text" id="nom" name="nom"><br>
+            <label for="prenom" >Votre prénom* : </label><input type="text" id="prenom" name="prenom"><br>
+            <label for="sex"> Sex* :</label>
+            <input type="radio" name="sex" id="sex" value="féminin" >Féminin
+            <input type="radio" name="sex"  value="masculin">Masculin <br>
+            <label for="naissance">Date de naissance* : </label><input type="date" id="naissance" name="naissance"><br>
+            <label for="code">Code postal* : </label><input type="text" id="code" name="code"><br>
+            <label for="adresse" >Adresse : </label><input type="text" id="adresse" name="adresse"><br>
+            <label for="ville" >Ville : </label><input type="text" id="ville" name="ville"><br>
+            <label for="email">Email* : </label><input type="text"  id="email" name="email" placeholder="dave.loper@afpa.fr"><br>
 
         </fieldset>
         <fieldset>
@@ -46,15 +43,15 @@
                 <option value="Reclamation" >Réclamation</option>
                 <option value="Autres" >Autres</option> 
                 
-            </select>
+            </select><br>
+            <label for="sujet">Votre question* : </label>
+            <textarea name="question" id="question" cols="20" rows="1"></textarea>
             
         </fieldset>
         <input type="checkbox" name="accepter" id="accepter"><label for="accepter">* Jaccepte le traitement informatique de ce formulaire</label><br>
         <input type="submit" value="Envoyer">
         <input type="submit" value="Annuler">
     </form>
-  </tbody>
-  <tfoot>
     <hr>
     <ul>
       <li><a href="">Mention légales</a></li>
@@ -62,7 +59,5 @@
       <li><a href="">Plan du site</a></li>
     </ul>
     
-  </tfoot>
-    
 </body>
-</html>
+</html> 
