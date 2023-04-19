@@ -5,9 +5,6 @@
   <title>Ma première page en HTML 5</title>
 </head>
  <body>
-  <thead>
-    <img src="/home/stagiaire/TBDA/HTML/JARDITOU/assets/img" alt="">
-  </thead>
     
   <h1>Le HTML 5</h1>
   <p>Le langage HTML, c'est fantastique.</p> 

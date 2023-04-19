@@ -5,17 +5,17 @@
   <title>Image</title>
 </head>
 <body>
-    <img src="logo_windows.jpg" alt="Texte alternatif de l'image" title="Titre de l'image" > Logo Jarditou
+    <img src="/home/stagiaire/TBDA/HTML/logo_windows.jpg" alt="Texte alternatif de l'image" title="Titre de l'image" > logo_windows
 
    <!--en supprimant l'attribut title et passant la souris le titre de limage sera pas affiché-->
-   <img src="logo_windows.jpg" alt="Texte alternatif de l'image" > Logo Jarditou
+   <img src="/home/stagiaire/TBDA/HTML/logo_windows.jpg" alt="Texte alternatif de l'image" > logo_windows
 
    <!--Quant on modifie le nom de l'image sans le modifier dans l'attribut src, l'image ne sera pas affichée 
      à la place on aura le texte de l'attribut alt  qui s'afficeh-->
-   <img src="logo_windows1.jpg" alt="Texte alternatif de l'image" > Logo Jarditou
+   <img src="/home/stagiaire/TBDA/HTML/logo_windows1.jpg" alt="Texte alternatif de l'image" > logo_windows
 
     <!--Quant on supprime l'attribu alt rien ne change sur l'affichage de notre page-->
-   <img src="logo_windows.jpg" title="Titre de l'image" > Logo Jarditou
+   <img src="/home/stagiaire/TBDA/HTML/logo_windows.jpg" title="Titre de l'image" > logo_windows
 
   </body>
 </html>

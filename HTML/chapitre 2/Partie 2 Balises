@@ -17,6 +17,6 @@
         </p>
 
         
-        <img src="image.jpeg" alt="image des chiens">
+        <img src="image.jpeg" alt="image des chiens" width="400" height="400">
     </BOdy>
 </html>

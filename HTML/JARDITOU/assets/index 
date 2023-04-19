@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Jarditou</title>
+</head>
+<body>
+  <thead>
+    <img src="/home/stagiaire/TBDA/HTML/JARDITOU/assets/img/Logo_jarditou.png" alt="Logo Jarditou" title="Logo Jarditou" >
+    <p>La qualité depuis 70 ans</p>
+
+    <ul>
+      <li><a href="/home/stagiaire/TBDA/HTML/JARDITOU/assets/index" title="accueil">Accueil</a></li>
+      <li><a href="/home/stagiaire/TBDA/HTML/JARDITOU/assets/tableau" title="tableau">Tableau</a></li>
+      <li><a href="/home/stagiaire/TBDA/HTML/JARDITOU/assets/contact" title="contact">Contact</a></li>
+    </ul>
+    <img src="/home/stagiaire/TBDA/HTML/JARDITOU/assets/img/Promotion sur lames de terrasse.png" alt="promotion sur les lames de terrasse" title="Promotion sur lames de terrasse">
+    <h2>Accueil</h2>
+    <hr>
+  </thead>
+  <tbody>
+    <h3>Lentreprise</h3>
+    <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et de paysagisme.</p>
+    <p> Créée il y a 70 ans, notre entreprise vend fleurs,arbustes,matériel à main et motorisé. </p> 
+    <p>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbeville, Corbie.</p>
+    <h3>Qualité</h3>
+    <p>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur dans tout votre projet. </p>
+    <p>vous serez séduit par notre entreprise, nos compétences et notre serieux.</p>
+    <h3>Devis Gratuit</h3>
+    <p>
+      Vous pouvez bien sùr nous contacter pour de plus amples information ou pour une demande d'intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.
+    </p>
+    <hr>
+    
+  </tbody>
+  <tfoot>
+    <ul>
+      <li><a href="">Mention légales</a></li>
+      <li><a href="">Horaires</a></li>
+      <li><a href="">Plan du site</a></li>
+    </ul>
+    
+  </tfoot>
+    
+</body>
+</html>
