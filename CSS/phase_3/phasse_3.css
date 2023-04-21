@@ -1,0 +1,35 @@
+
+/*applequer des styles sur le titre*/
+h3
+{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: cornflowerblue;
+    background-color: darkcyan;
+}
+
+
+/*Appliquer des styles sur le paragraphe*/
+
+p
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-style: normal;
+    line-height: normal;
+    text-align:justify ;
+    color: darkblue;
+    background-color: azure;
+}
+
+/* Appliquer des styles sur toute la page*/
+div
+{
+    border-style:groove;
+    border-color: blue;
+    border-width: 10px;
+    border-radius: 10px; 
+    background: linear-gradient(to right, white, black);
+    box-shadow: 10px 5px 5px red;
+    text-shadow: 1px 1px 2pix pink;
+}

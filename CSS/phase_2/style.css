@@ -28,6 +28,11 @@ body {
    {
     color: blueviolet;
    }
+
    h3:hover {
     color: red;
    }
+   p::first-line {
+    color: rgb(0, 255, 64);
+    text-transform: uppercase;
+  }
