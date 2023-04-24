@@ -1,0 +1,36 @@
+/*************************************************************************************
+************************************Page Index***************************************/
+
+/* Choix de la taille des caracteres et le style d'ecriture pour toute la page index*/
+html{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.entete{
+    text-align:center;
+    font-size: 2rem;
+}
+
+/* Appliquer de style sur la partie en-tete*/
+ul{
+    width:100%;
+    height: auto;
+    padding:20px;
+    border: 5px solid black;
+    border-right: 20px;
+    display:flex;
+    background-color: black;
+    min-width: 100px;
+    margin:5px 0px 5px 0px;
+    
+}
+.promo img{
+    width: 100%;
+    height: auto;
+}
+
+a{
+    color:white;
+    min-width: 100px;
+}
