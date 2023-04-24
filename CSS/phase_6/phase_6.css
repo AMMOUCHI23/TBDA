@@ -1,0 +1,45 @@
+/* La taille des caracteres de notre page html*/
+html {
+    font-size: 100%;
+}
+/* la taile des caracteres de l'element h1 par rapport à la taile des caractere de notre page html*/
+h1{
+    color: brown;
+    font-size: 2rem;
+}
+
+img 
+{
+     max-width: 10%;
+     height: auto;
+}
+
+/* Les lignes de code du web responsive on les met toujour à la fin de notre programme css*/
+
+/* Ce code va afficher le titre h1 en 20px sur les ecrans inferieurs à 576px, et en 40px pour les tailles des ecrans entre 576 et 768px*/
+
+@media screen and (max-width: 576px) 
+{ 
+    h1 
+    { 
+        
+        font-size : 20px; 
+    } 
+} 
+
+@media screen and (max-width: 768px) 
+{ 
+    h1 
+    { 
+        font-size :40px; 
+    } 
+}     
+
+/* Appliquer de responsive sur les images avec le code suivant
+la la largeur maximale de l'image est 100% de l'image, et la hauteur de l'image et automatiquement proportionnelle à la largeur de l'image */
+
+img 
+{
+     max-width: 100%;
+     height: auto;
+}
