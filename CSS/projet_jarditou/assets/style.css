@@ -7,30 +7,72 @@ html{
     font-family: 'Times New Roman', Times, serif;
 }
 
+/*Aplliquer du style sur les élements d'entete de nos pages*/
+
+.logo{
+    width: 20%;
+    height: auto;
+    position:relative;
+    top:40px;
+    bottom: 50px;;
+
+}
+
 .entete{
     text-align:center;
     font-size: 2rem;
+    margin: 5px 0px 5px 0px;
+    position:relative;
+    left: 200px;
+    
 }
 
-/* Appliquer de style sur la partie en-tete*/
 ul{
     width:100%;
     height: auto;
-    padding:20px;
+    padding:15px;
     border: 5px solid black;
-    border-right: 20px;
-    display:flex;
+    display:inline-flex;
     background-color: black;
-    min-width: 100px;
-    margin:5px 0px 5px 0px;
-    
+    margin: 5px 0px 5px 0px;
 }
-.promo img{
+    
+
+.promo{
     width: 100%;
     height: auto;
 }
 
 a{
     color:white;
-    min-width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1.5rem;
+
+}
+/*Appliquer du style sur le crops de la page*/
+section{
+    display: inline-flex;
+   
+}
+
+
+.box{
+  width: 500px;
+   height: 400px;
+
+   
+}
+#text{
+    display: flex;
+    width: 50%;  
+    
+}
+
+#fside{
+    display: flex;
+    width: 25%;
+    
+    background-color:gray
+    
 }
