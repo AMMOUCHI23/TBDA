@@ -1,0 +1,54 @@
+Exercice 2.1
+Le programme va afficher les valeures des variables val et Double
+ Val=231
+ Double=462
+ 
+Exercice 2.2
+ variable Val, Carre en Entier
+ Début
+ A ← 5
+ Carre ← A*A         /* On peut ecrire aussi Carre ← A^2  */
+ Ecrire Carre
+ Fin
+ 
+ Ce programme va afficher: Carre=25
+ 
+Exercice 2.3 
+Variables PrixHT, NombreArticle,TauTVA, TotalHT, TotalTTC en Numérique
+Début
+ PrixHT ← 50
+ NombreArticle ← 4
+ TauTVA ← 0.2
+ TotalHT ← PrixHT * NombreArticle 
+ TotalTTC ← TotalHT + ( TotalHT * TauTVA )
+ Ecrire TotalTTC
+ Fin
+ 
+ Ce programme va afficher: TotalTTC= 240
+
+Exercice 2.4
+
+Variables A, B, C, D, E, Variante1, Variante2, Variante3, Variante4 en String
+Début
+ A ← "Belle Marquise"
+ B ← "vos beaux yeux"
+ C ← "me font"
+ D ← "mourir"
+ E ← "d’amour"
+ Variante1 ← A & B & C & D & E
+ Variante2 ← E & D & C & A & B
+ Variante3 ← B & E & C & A & D
+ Variante4 ← D & B & A & E & C
+ Ecrire Variante1
+ Ecrire Variante2
+ Ecrire Variante3
+ Ecrire Variante4
+ Fin
+ 
+ Ce Programme va afficher:
+ Variante1 = "Belle Marquise, vos beaux yeux me font mourir d’amour"
+ Variante2 = "D’amour mourir me font, belle Marquise, vos beaux yeux"
+ Variante3 = "vos beaux yeux d’amour me font, belle Marquise, mourir"
+ Variante4 = "Mourir vos beaux yeux, belle Marquise, d’amour me font"
+ 
+
