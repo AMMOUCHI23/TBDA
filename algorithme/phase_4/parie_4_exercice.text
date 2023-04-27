@@ -1,0 +1,74 @@
+Exercice 4.1
+
+Variable TuTU, Toto en Numérique
+Variable Tata en caractere
+Début
+ Ecrire " Introduire la valeur de Tutu"
+ Lire Tutu
+ Ecrire " Introduire la valeur de Toto"
+ Lire Toto
+ Ecrire " Introduire la valeur Tata"
+ Lire Tata
+ Si (Tutu > Toto + 4) et (Tata <> "OK") Alors
+    Tutu ← Tutu - 1
+ Sinon
+ Tuto ← Tutu + 1
+ Finsi
+Ecrire Tutu
+Fin
+
+Exercice 4.2
+
+Variable Heures, Minutes en Entier
+Début
+ Ecrire  "Introduire les heures"
+ Lire Heures
+ Ecrire  "Introduire les minutes"
+ Lire Minutes
+ Si (Minutes = 59) Alors
+ Heures ← Heures + 1
+ Minutes ← 0
+ Ecrire "Dans une minute il sera Heures heure(s) Pile"
+ Sinon
+ Heures ← Heures
+ Minute ← Minutes + 1
+ Ecrire " Dans une minute il sera Heures heure(s) et Minutes minute(s)"
+ Finsi
+fin
+ 
+
+Exercice 4.3
+Variable Heures, Minutes, Secondes en Entier
+Début
+ Ecrire  "Introduire les heures"
+ Lire Heures
+ Ecrire  "Introduire les minutes"
+ Lire Minutes
+ Ecrire  "Introduire les secondes"
+ Lire Secondes
+ Si (Minutes = 59) et (Secondes = 59) Alors
+ Heures ← Heures + 1
+ Minutes ← 0
+ Seconde ← 0
+ Ecrire "Dans une seconde il sera Heures heure(s) Pile"
+ Sinonsi (Secondes = 59)
+ Heures ← Heures
+ Minute ← Minutes + 1
+ Seconde ← 0
+ Ecrire " Dans une seconde il sera Heures heure(s) et Minutes minute(s) et 0 secondes"
+ sinon 
+ Heures ← Heures
+ Minute ← Minutes 
+ Secondes ← Secondes +1
+ Ecrire " Dans une seconde il sera Heures heure(s) et Minutes minute(s) et Secondes seconde(s)"
+ Finsi
+fin
+ 
+Exercice 4.4
+
+
+Exercice 4.5
+Exercice 4.6
+Exercice 4.7
+Exercice 4.8
+

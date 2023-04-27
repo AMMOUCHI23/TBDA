@@ -36,22 +36,22 @@ Début
  Lire Nom_2
  Ecrire "Introduire le troixieme nom en majuscule"
  Lire Nom_3
- si (Nom_1 =< Nom_2) ET (Nom_1 =< Nom_3) ET (Nom_2 =< Nom_3) 
-    Ecrire " L'orrdre des noms est: Nom_1 puis Nom_2 puis Nom_3"
+ si (Nom_1 =< Nom_2) ET (Nom_1 =< Nom_3) ET (Nom_2 =< Nom_3) Alors
+    Ecrire "L'orrdre des noms est: Nom_1 puis Nom_2 puis Nom_3"
     
- sinosi  (Nom_1 =< Nom_2) ET (Nom_1 =< Nom_3) ET (Nom_3 =< Nom_2)
-     Ecrire " L'orrdre des noms est: Nom_1 puis Nom_3 puis Nom_2"
+ sinosi  (Nom_1 =< Nom_2) ET (Nom_1 =< Nom_3) ET (Nom_3 =< Nom_2) Alors
+     Ecrire "L'orrdre des noms est: Nom_1 puis Nom_3 puis Nom_2"
     
- sinonsi  (Nom_2 =< Nom_1) ET (Nom_2 =< Nom_3) ET (Nom_1 =< Nom_3)
-    Ecrire " L'orrdre des noms est: Nom_2 puis Nom_1 puis Nom_3"
+ sinonsi  (Nom_2 =< Nom_1) ET (Nom_2 =< Nom_3) ET (Nom_1 =< Nom_3) Alors
+    Ecrire "L'orrdre des noms est: Nom_2 puis Nom_1 puis Nom_3"
   
- sinonsi  (Nom_2 =< Nom_1) ET (Nom_2 =< Nom_3) ET (Nom_3 =< Nom_1) 
-   Ecrire " L'orrdre des noms est: Nom_2 puis Nom_3 puis Nom_1"
+ sinonsi  (Nom_2 =< Nom_1) ET (Nom_2 =< Nom_3) ET (Nom_3 =< Nom_1) Alors
+   Ecrire "L'orrdre des noms est: Nom_2 puis Nom_3 puis Nom_1"
    
- sinonsi  (Nom_3 =< Nom_1) ET (Nom_3 =< Nom_2) ET (Nom_1 =< Nom_2) 
-   Ecrire " L'orrdre des noms est: Nom_3 puis Nom_1 puis Nom_2"
+ sinonsi  (Nom_3 =< Nom_1) ET (Nom_3 =< Nom_2) ET (Nom_1 =< Nom_2) Alors 
+   Ecrire "L'orrdre des noms est: Nom_3 puis Nom_1 puis Nom_2"
  Sinon
-   Ecrire " L'orrdre des noms est: Nom_3 puis Nom_2 puis Nom_1"
+   Ecrire "L'orrdre des noms est: Nom_3 puis Nom_2 puis Nom_1"
  finsi
 fin
  
@@ -75,5 +75,44 @@ Fin
 
 Exercice 3.5
 
+Variable Nombre_1, Nombre_2 en numérique
+Début
+ Ecrire " introduire le premier nombre"
+ Lire Nombre_1
+ Ecrire "introduire le deuxieme nombre"
+ Lire Nombre_2
+ si ( Nombre_1 * Nombre_2) < 0 Alors
+    Ecrire " Le produit de deux nombre est négatif"
+ sinonsi ( Nombre_1 * Nombre_2) > 0 Alors
+     Ecrire "Le produit de deux nombres est positif"
+ sinon
+    Ecrire "Le produit de deux nombres vaut zéro"
+ Finsi
+fin
+
+
 Exercice 3.6
+
+Variable AgeEnfant en numérique
+Début
+ Ecrire "introduire l'age de l'enfant"
+ Lire AgeEnfant
+ si AgeEnfant < 6 Alors
+    Ecrire "L'enfant ne rentre pas dans les catégories"
+ sinonsi (AgeEnfant >= 6) ET (AgeEnfant < 8) Alors
+    Ecrire "La catégorie de l'enfant est: Poussin"
+ sinonsi (AgeEnfant >= 8) ET (AgeEnfant < 10) Alors
+    Ecrire "La catégorie de l'enfant est: Pupille"
+ sinonsi (AgeEnfant >= 10) ET (AgeEnfant < 12) Alors
+    Ecrire "La catégorie de l'enfant est: Minime"
+ sinon
+    Ecrire "La catégorie de l'enfant est: Cadet"
+ Finsi
+fin
+  
+Oui on peut concevoir d'autres algorithmes équivalents à ce résultats
+par exemple avec l'instruction suitch déjà c'est ça que je suggere pour
+eviter de mettre plusieurs conditions si et sinon...
+
+
 

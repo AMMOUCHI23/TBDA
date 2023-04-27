@@ -4,27 +4,26 @@ Le programme va afficher les valeures des variables val et Double
  Double=462
  
 Exercice 2.2
- variable Val, Carre en Entier
- Début
- A ← 5
- Carre ← A*A         /* On peut ecrire aussi Carre ← A^2  */
- Ecrire Carre
- Fin
+ variable Nombre, Carre en Entier
+Début
+ Ecrire "Introduire un nombre"
+ Lire Nombre
+ Carre ← Nombre * Nombre        /* On peut ecrire aussi Carre ← Nombre^2  */
+ Ecrire " Le carre de Nombre est: Carre"
+Fin
  
- Ce programme va afficher: Carre=25
  
 Exercice 2.3 
 Variables PrixHT, NombreArticle,TauTVA, TotalHT, TotalTTC en Numérique
 Début
- PrixHT ← 50
- NombreArticle ← 4
+ Lire PrixHT 
+ Lire  NombreArticle 
  TauTVA ← 0.2
  TotalHT ← PrixHT * NombreArticle 
  TotalTTC ← TotalHT + ( TotalHT * TauTVA )
- Ecrire TotalTTC
- Fin
+ Ecrire "Le total TTC est: TotalTTC"
+Fin
  
- Ce programme va afficher: TotalTTC= 240
 
 Exercice 2.4
 
@@ -43,7 +42,7 @@ Début
  Ecrire Variante2
  Ecrire Variante3
  Ecrire Variante4
- Fin
+Fin
  
  Ce Programme va afficher:
  Variante1 = "Belle Marquise, vos beaux yeux me font mourir d’amour"
