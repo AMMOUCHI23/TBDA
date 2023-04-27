@@ -1,0 +1,79 @@
+Exercice 3.1
+
+Variable Nombre en Numérique
+Début
+ Ecrire " Introduire un nombre"
+ Lire Nombre
+ si Nombre < 0 Alors
+   Ecrire " Le nombre est négatif"
+ sinon
+   Ecrire " Le nombre est positif"
+ Finsi
+Fin
+   
+Exercice 3.2
+
+Variable Nombre_1, Nombre_2 en numérique
+Début
+ Ecrire " introduire le premier nombre"
+ Lire Nombre_1
+ Ecrire "introduire le deuxieme nombre"
+ Lire Nombre_2
+ si ( Nombre_1 * Nombre_2) < 0 Alors
+    Ecrire " Le produit de deux nombre est négatif"
+ sinon
+     Ecrire " Le produit de deux nombres est positif"
+ Finsi
+fin
+ 
+Exercice 3.3
+
+Variable Nom_1, Nom_2, Nom_3 en Caractere
+Début
+ Ecrire "Introduire le premier nom en majuscule"
+ Lire Nom_1
+ Ecrire "Introduire le deuxieme nom en majuscule"
+ Lire Nom_2
+ Ecrire "Introduire le troixieme nom en majuscule"
+ Lire Nom_3
+ si (Nom_1 =< Nom_2) ET (Nom_1 =< Nom_3) ET (Nom_2 =< Nom_3) 
+    Ecrire " L'orrdre des noms est: Nom_1 puis Nom_2 puis Nom_3"
+    
+ sinosi  (Nom_1 =< Nom_2) ET (Nom_1 =< Nom_3) ET (Nom_3 =< Nom_2)
+     Ecrire " L'orrdre des noms est: Nom_1 puis Nom_3 puis Nom_2"
+    
+ sinonsi  (Nom_2 =< Nom_1) ET (Nom_2 =< Nom_3) ET (Nom_1 =< Nom_3)
+    Ecrire " L'orrdre des noms est: Nom_2 puis Nom_1 puis Nom_3"
+  
+ sinonsi  (Nom_2 =< Nom_1) ET (Nom_2 =< Nom_3) ET (Nom_3 =< Nom_1) 
+   Ecrire " L'orrdre des noms est: Nom_2 puis Nom_3 puis Nom_1"
+   
+ sinonsi  (Nom_3 =< Nom_1) ET (Nom_3 =< Nom_2) ET (Nom_1 =< Nom_2) 
+   Ecrire " L'orrdre des noms est: Nom_3 puis Nom_1 puis Nom_2"
+ Sinon
+   Ecrire " L'orrdre des noms est: Nom_3 puis Nom_2 puis Nom_1"
+ finsi
+fin
+ 
+ 
+Exercice 3.4
+
+Variable Nombre en Numérique
+Début
+ Ecrire " Introduire un nombre"
+ Lire Nombre
+ si Nombre < 0 Alors
+   Ecrire " Le nombre est négatif"
+ sinonsi Nombre > 0 Alors
+   Ecrire " Le nombre est positif"
+ sinon
+   Ecrire " Le nombre vaut zéro"
+ Finsi
+Fin
+
+
+
+Exercice 3.5
+
+Exercice 3.6
+
