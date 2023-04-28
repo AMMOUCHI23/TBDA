@@ -38,6 +38,7 @@ fin
  
 
 Exercice 4.3
+
 Variable Heures, Minutes, Secondes en Entier
 Début
  Ecrire  "Introduire les heures"
@@ -66,9 +67,167 @@ fin
  
 Exercice 4.4
 
+Variable NombreCopie, TotalFacture  en Numérique
+Début
+ Ecrire  "Introduire le nombre de copie"
+ Lire NombreCopie
+ Si NombreCopie =< 10 Alors
+    TotalFacture = 0.1 * NombreCopie
+ Sinonsi (NombreCopie > 10) Et (NombreCopie =< 30) aLORS
+    TotalFacture =( 0.1 *10) + 0.09*(NombreCopie - 10)
+ Sinon 
+    TotalFacture =( 0.1 * 10) + (0.09 * 20) + 0.08 * (NombreCopie - 30)
+ Finsi
+ Ecrire "Le total à payer est: TotalFacture (euros)"
+Fin
 
 Exercice 4.5
+
+Variable Age en Entier
+Variable Sex en Caractere
+Début
+ Ecrire "Introduire votre Age"
+ Lire  Age
+ Ecrire "introduire vore sexe"
+ Lire Sexe
+ Si (Sexe = "homme") ET (age >20) Alors
+    Ecrire "Vous etes imposable"
+ Sinonsi (Sexe = "femme") ET (age >= 18) ET (age =< 35) Alors
+    Ecrire "Vous etes imposable"
+ Sinon 
+    Ecrire " Vous n'etes pas imposable"
+ Finsi
+Fin
+
 Exercice 4.6
+
+Variable Candidat_1, Candidat_2, Candidat_3, Candidat_4 en Caractere
+Variable Score_1, Score_2, Score_3, Score_4 en Numérique
+Début
+  Ecrire "introduire le score de Candidat_1 au premier tour"
+  Lire Score_1
+  Ecrire "introduire le score de Candidat_2 au premier tour"
+  Lire Score_2
+  Ecrire "introduire le score de Candidat_3 au premier tour"
+  Lire Score_3
+  Ecrire "introduire le score de Candidat_4 au premier tour"
+  Lire Score_4
+
+  Si (Score_1 > Score_2) ET (Score_1 > Score_3) ET (Score_1 > Score_4)  
+       Si Score_1 > 50%  Alors
+          Ecrire "Le Candidat_1 est élu dés le premier tour"
+       Sinon
+          Ecrire "Le Candidat_1 est en ballottage favorable, il peut participer au deuxieme tour"
+       Finsi
+  Sinonsi (Score_1 >= 12.5% ) Alors
+     Ecrire "Le Candidat_1 est en ballottage défavorable, il peut participer au deuxieme tour "
+  Sinon
+  Ecrire "Le Candidat_1 est battu, il ne peut pas participer au deuxieme tour"
+  Finsi
+Fin
+
 Exercice 4.7
+
+Variable AgeConducteur, AgePermis, NombreAccident, Fidelite en Numerique
+Debut
+  Ecrire "Introduire l'age du conducteur"
+  Lire AgeConducteur
+  Ecrire "Introduire l'age de votre permis"
+  Lire AgePirmis
+  Ecrire "Introduire le nombre d'accident où vous etes responsable"
+  Lire NombreAccident
+  Ecrire "Introduire le nombre d'années de fidelité avec notre compagnie"
+  Lire Fidelite
+  sI AgeConducteur > 25
+     si AgePermis > 2
+        si NombreAccident = 0 Alors
+           Si Fidelite > 1 Alors
+              Ecrire " Vous benificier du tarif bleu"
+           Sinon
+            Ecrire " Vous benificier du tarif vert"
+           Finsi
+        Sinonsi NombreAccident = 1 Alors 
+          Ecrire " Vous benificier du tarif orange"
+        Sinonsi NombreAccident = 2 Alors 
+           Ecrire " Vous benificier du tarif rouge"
+        Sinon
+           Ecrire "Vous etes refusé"
+        Finsi
+     Sinonsi AgePermis < 2 
+         Si NombreAccident = 0 Alors
+            Ecrire " Vous benificier du tarif orange"
+         Sinonsi NombreAccident = 1 Alors
+            Ecrire " Vous benificier du tarif Rouge"
+         sinon
+            Ecrire "Vous etes refusé"
+        Finsi
+     Finsi
+  Sinonsi AgePermis > 2
+       Si NombreAccident = 0
+          Si Fidelite > 1 Alors
+             Ecrire " Vous benificier du tarif vert"
+          Sinon 
+          Ecrire " Vous benificier du tarif orange"
+          Finsi
+       Sinonsi NombreAccident = 1 Alors
+          Ecrire " Vous benificier du tarif rouge"
+       sinon
+       Ecrire "Vous etes refusé"
+       Finsi
+ Sinonsi NombreAccident = 0 Alors
+    Ecrire " Vous benificier du tarif rouge"
+ Sinon
+    Ecrire " Vous etes refusé"
+ Finsi
+Fin
+           
 Exercice 4.8
+
+Variable Jour, Mois, Annee en Date
+Début
+  Ecrire "Introduire un numéro du jour"
+  Lire Jour
+  Ecrire "Introduire un numéro du mois"
+  Lire Mois
+  Ecrire "Introduire un numéro de l'année"
+  Lire Annee
+  si (Annee > 0) ET (Annee <= 2023)
+     si Mois = 2 
+        si Annee dp 4
+           si Jour > 0 ET Jour <= 29 Alors
+              Ecrire "Date valide"
+           Sinon
+              Ecrire "Date invalide"
+           Finsi
+        Sinonsi Jour > 0 ET Jour <= 28  
+          Ecrire "Date valide"
+        Sinon
+          Ecrire "Date invalide"
+        Finsi 
+     Sinonsi Mois > 0 ET Mois <= 12 ET Mois <> 2 
+         Si (Mois = 1) OU (Mois = 3) OU (Mois = 5) OU (Mois = 7) OU (Mois = 8) OU (Mois = 10) OU (Mois = 12) 
+             Si Jour > 0 ET Jour <= 31 Alors
+                Ecrire "Date valide"
+             Sinon
+                Ecrire "Date invalide"
+             Finsi
+         Sinonsi (Mois = 4) OU (Mois = 6) OU (Mois = 9) OU (Mois = 11) 
+            Si Jour > 0 ET Jour <= 30 Alors
+                Ecrire "Date valide"
+             Sinon
+                Ecrire "Date invalide"
+             Finsi
+         Sinon 
+            Ecrire "Date invalide"
+         Finsi
+     Sinon
+       Ecrire "Date invalide"
+  Sinon 
+    Ecrire "Date invalide"
+  Finsi
+Fin
+       
+                
+             
+
 
