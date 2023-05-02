@@ -1,0 +1,201 @@
+Exercice 5.1
+
+Variable Nombre en Entier
+Début
+   Ecrire "Entrer un nobre compris enre 1 et 3"
+   Lire Nombre
+   TantQue Nombre < 1 ET Nombre > 3
+         Ecrire "Votre saisie est incorrecte, entrer un nombre compris enre 1 et 3"
+         Lire Nombre
+   FinTantQue
+   Ecrire "La saisie est acceptée"
+Fin
+
+Exercice 5.2
+
+Variable Nombre en Entier
+Début
+   Ecrire "Entrer un nombre compris entre 10 et 20"
+   Lire Nombre
+   TantQue  Nombre < 10 ET Nombre > 20
+          Si Nombre < 10 Alors
+             Ecrire "Le nombre entré est petit"
+          Sinonsi Nombre > 20
+             Ecrire "Le nombre entré est Grand"
+          Finsi
+          Ecrire "Entrer un nombre compris entre 10 et 20"
+          Lire Nombre
+    FinTantQue
+    Ecrire "Le nombre entré est accepté"
+Fin
+
+Exercice 5.3
+
+Variable Nombre en Entier
+Début
+   Ecrire "Entrer un nombre "
+   Lire Nombre
+   TantQue Nombre < (Nombre +10)
+       Nombre  ←  Nombre + 1
+       Ecrire " Nombre "
+   FinTantQue
+Fin
+
+Exercice 5.4
+Variable Nombre, i en Entier
+Début
+   Ecrire "Entrer un nombre "
+   Lire Nombre
+   Ecrire "Table de Nombre: "
+   Pour i  ←  1 à Nombre
+        Ecrire " Nombre "*" i "=" Nombre * i"
+   i Suivant    
+Fin
+
+Exercice 5.5
+
+Variable i, Nombre, Somme en Entier
+Début
+  Ecrire "Introduire un Nombre"
+  Lire Nombre
+  Somme  ← 0
+  Pour i ← 1 à Nombre
+     Somme = Somme + i
+  i Suivant
+  Ecrire "Le résultat est: Somme" 
+Fin
+
+Exercice 5.6
+
+Variable i, Nombre, Factorielle en Entier
+Début
+   Ecrire "Introduire un Nombre"
+   Lire  Nombre
+   Factorielle  ← 1
+   Pour i  ← 2 à Nombre
+       Factorielle = Factorielle * i   
+   i Suivant
+   Ecrire "La "factorielle" de "Nombre" est: Factorielle"
+Fin
+
+Exercice 5.7
+Variable i, Nombre, Position, GrandNombre en Entier
+Début 
+   GrandNombre ← 0
+   Position ← 1
+   Pour i ← 1 à 20
+       	Ecrire "introduire le nombre numéro i"
+        Lire Nombre
+        Si Nombre > GrandNombre Alors
+           GrandNombre ← Nombre
+           Position ← i
+        Finsi
+  i Suivant
+  Ecrire " Le nombre le plus grand est: GrandNombre "
+  Ecrire " C'st le nombre numéro: Psition"
+Fin
+
+Exercice 5.8
+
+Variable Nombre, Position, GrandNombre, Compteur en Entier
+   Début
+   Nombre ← 1
+   GrandNombre ← 0
+   TantQue Nombre <> 0
+        Ecrire "Introduire un Nombre"
+        Lire Nombre
+        Compteur ← Compteur + 1
+        Si Nombre > GrandNombre Alors
+           GrandNombre ← Nombre
+           Position ← Compteur
+        Finsi+
+   FinTantQue
+   Ecrire " Le nombre le plus grand est: GrandNombre "
+   Ecrire " C'est le nombre numéro: P0sition"
+   
+Exercice 5.9
+Variable TotalAchat, Prix, Espece, Reste, Nombrede10E, Nombrede5E, Nombrede1E en Entier
+Début
+  Prix
+  TotalAchat ← 0
+  Nombrede10E ← 0
+  TantQue Prix <> 0
+          Ecrire " Introduire le prix"
+          Lire Prix
+          TotalAchat= TotalAchat + Prix
+  FinTantQue
+  Ecrire "La somme totale de vos achats est: ",TotalAchat
+  Ecrire " Introduire votre espece"
+  Lire Espece  
+  Reste ← Espece - TotalAchat
+  TantQue Reste >= 10
+    Nombrede10E ← Nombrede10E + 1
+    Reste ← Reste - 10
+  FinTantQue
+  Si Reste >= 5 ET Reste < 10
+     Nombrede5E ← 1
+     Nombrede1E ← Reste mode 5  /* Reste mode 5 est le reste de la divition  euclidienne de Reste / 5 */
+     Reste ← 0
+  SinonSi Reste < 5
+      Nombrede1E ← Reste
+      Reste  ← 0
+  FinSi
+  
+  Ecrire "Nombre de beillet de 10 euros à rendre est :", Nombrede10E
+  Ecrire "Nombre de beillet de 5 euros à rendre est :", Nombrede5E
+  Ecrire "Nombre pieces de 1 euros à rendre est :", Nombrede1E
+Fin
+
+      
+Exercice 5.10
+Variable N, P, i, FactorielleN, FactorielleP, FactorielleNP, X, Y en Numérique
+ Début
+ Ecrire "Introduire le nombre de chevaux partans"
+ Lire N
+ Ecrire "Introduire le nombre de chevaux joués"
+ Lire P
+ FactorielleN ← 1
+ FactorielleP ← 1
+ FactorielleNP ← 1
+ Pour i ← 2 à N
+      FactorielleN ← FactorielleN * i
+ i Suivant
+ Pour i ← 2 à P
+      FactorielleP ← FactorielleP * i
+ i Suivant
+ Pour i ← 2 à (N -P)
+      FactorielleNP ← FactorielleNP * i
+ i Suivant
+ X ← FactorielleN / FactorielleNP
+ Y ← FactorielleN / (FactorielleP * FactorielleNP)
+ Ecrire " Dans l'ordre une chance sur ", X " de gagner"
+ Ecrire " Dans le désordre une chance sur ", Y " de gagner"
+Fin
+
+  Deuxieme version
+  
+  Si on fait la combinaison des deux relations qui permettent de calculer X et Y
+  X = n ! / (n - p) !
+  Y = n ! / (p ! * (n – p) !)
+  On trouvera :
+  X = N * (N-1) * (N-2) * ...* (N-P+1)
+  Y = X / p !
+  
+  Variable X, Y, i, FactorielleP en Numérique
+Début
+   Ecrire "Introduire le nombre de chevaux partans"
+   Lire N
+   Ecrire "Introduire le nombre de chevaux joués"
+   Lire P
+   X ← 1
+   FactorielleNP ← 1
+   Pour i ← 2 à P
+        X ← X * (N - P + 1)
+        FactorielleP ← FactorielleP * i
+   i Suivant
+   Y = X / FactorielleP
+   Ecrire " Dans l'ordre une chance sur ", X " de gagner"
+   Ecrire " Dans le désordre une chance sur ", Y " de gagner"
+Fin
+   
+   
