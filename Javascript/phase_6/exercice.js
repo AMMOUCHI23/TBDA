@@ -7,7 +7,7 @@ d=true;
 // Afficher a
 document.write(Message+a+"<br>");
 //Appliquez à b l'opérateur de décrémentation
-b++;
+b--;
 //Ajoutez à c la valeur de a
 c=c+a;
 //Inversez la valeur de d

@@ -6,7 +6,7 @@ function produit(x, y){
   document.write("le produis de "+x+" x "+ y+" est égale à " +(x*y)+"<br>") 
 }
 produit();
-resultat=x*x*x;
+
 
 // La fonction qui affiche une image
 function afficheImg(image)
@@ -16,4 +16,3 @@ image.src="papillon.jpg"
 document.body.appendChild(image);
 }
 afficheImg();
-document.getElementById('produit').innerHTML = ("le cube de "+x+"est égale à"+ resultat)
