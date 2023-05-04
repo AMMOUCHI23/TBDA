@@ -3,4 +3,4 @@ function strtok(str1,str2,n){
     return document.write (mots[n]);  
 }
 str1 = "robert ;dupont ;amiens ;80000" 
-strtok(str1,";",3);
+strtok(str1,";",0);
