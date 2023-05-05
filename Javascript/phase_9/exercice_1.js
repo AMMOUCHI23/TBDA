@@ -1,18 +1,21 @@
+
 // La fonction qui calcule le produit de deux nombres
 
+var x = prompt("Entrez un nombre");
+var y = prompt("Entrez un multiplicateur")
+
 function produit(x, y){
-  x=prompt("Entrez un nombre");
-  y=prompt("Entrez un multiplicateur");
-  document.write("le produis de "+x+" x "+ y+" est égale à " +(x*y)+"<br>") 
+
+  document.getElementById('produit').innerHTML=("Le cube de "+x+ " est égale à  "+ (x*x*x) +"<br>"+"Le produis de "+x+" x "+ y+" est égale à " +(x*y) )
 }
-produit();
 
+produit(x, y);
 
-// La fonction qui affiche une image
-function afficheImg(image)
+// La fonction qui calcule le produit de deux nombres
+function afficheImg()
 {
-var image = document.createElement("img");
-image.src="papillon.jpg"
-document.body.appendChild(image);
+
+document.getElementById("papillon").src= ("papillon.jpg");
 }
 afficheImg();
+
