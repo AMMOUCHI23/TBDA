@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+</head>
+
+<script>
+
+    function checkForm(f) {
+        alert("Contrôle champ " + f.elements['chp'].value);
+        return false; // n’envoie pas le formulaire
+
+    }
+    checkForm();
+
+    function livre(auteur, titre,prix, annee){
+        this.auteur=auteur;
+        this.titre=titre;
+        this.prix= prix;
+        this.annee=annee;
+    }
+    var livre1=new livre("John Paul","Python",25,2020 );
+    document.write("mon auteur est: "+livre1.auteur);
+</script>
+</head>
+
+<body>
+    <textarea name="" id="" cols="50" rows="10" value="bonjour" placeholder="Taper votre texte ici ..."></textarea> <br>
+    <fieldset>
+        <legend>Selectionner une option</legend>
+        <div>
+            <input type="radio" name="drone" value="Red" checked>
+        <label for="Red">Red</label><br>
+    </div>
+    <div>
+        <input type="radio" name="drone" value="white" index="1">
+        <label for="white">white</label>
+    </div>
+    </fieldset>
+    <!--Liste de selection-->
+    <select name="" id="" >
+        <option value="">choisi une reponse</option>
+        <option value="chien">Chien</option>
+        <option value="chat">Chat</option>
+        <option value="vache">Vache</option>
+        <option value="chevre">Chevre</option>
+        <option value="cheval">Cheval</option>
+    </select>
+    <form name="form3"> 
+        <input type="radio" name="choix" value="1" />Choix numéro 1<br /> 
+        <input type="radio" name="choix" value="2" />Choix numéro 2<br />
+        <input type="radio" name="choix" value="3" />Choix numéro 3<br /> 
+        <input type="button" name="but" value="Quel est votre choix ?" onClick="choixprop(form3)" />
+        </form>
+    <form action="" id="form1" onSubmit="return checkForm(this);">
+
+        <input type="text" name="chp" value="essai" />
+        <input type="submit" value="Valider" />
+    </form>
+</body>
+
+</html>

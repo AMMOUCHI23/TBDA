@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter</title>
+    <link rel="stylesheet" href="exercice_formulaire.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        <h3>Vous coordonnées:</h3>
+        <p>* Ces zones sont obligatoires pour envoyer le formulaire.</p>
+        <div> <label for="société">Société :</label>
+            <input type="text" minlength="1">
+        </div>
+        <div>
+            <label for="contact">Personne à contacté :</label>
+            <input type="text" minlength="1">
+        </div>
+        <div>
+            <label for="adresse">Adresse de l'entreprise :</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="code postal">Code Postal :</label>
+            <input type="number" maxlength="5">
+        </div>
+        <div>
+            <label for="ville">Ville :</label>
+            <input type="text" minlength="1">
+        </div>
+        <div>
+            <label for="mail">E-mail :</label>
+            <input type="email">
+        </div>
+    
+        <div>
+            <label for="telephone">Telephone :</label>
+            <input type="tel">
+        </div>
+        <div>
+            <label for="projet">Sélectionner l'enveronnement technique du projet :</label>
+            <input type="text"><br>
+
+            <select name="" id="">
+                <option value="" selected >Choisissez</option>
+                <option value="" >Access</option>
+                <option value="">Java</option>
+                <option value="">Delphi</option>
+                <option value="">Windev</option>
+                <option value="">Visual Basic</option>
+                <option value="">Power Build</option>
+                <option value="">Internet</option>
+                <option value="">Intranet</option>
+                <option value="">Windows Nt</option>
+                <option value="">Unix</option>
+                <option value="">Sql Server</option>
+                <option value="">Oracle</option>
+                <option value="">Autres...</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Envoyer</button>
+            <button type="reset">Effacer</button>
+        </div>
+    </form>
+</body>
+
+</html>
