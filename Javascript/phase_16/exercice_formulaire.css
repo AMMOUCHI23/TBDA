@@ -1,23 +1,56 @@
 /* Appliquer de CSS sur le formulaire */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 100%;
+    font-size: 20px;
     
 }
 p{
     font-weight: bold;
     color: brown;
+
 }
 form{
     padding:10px;
     width: 90%; 
 }
-label{
-    font-weight: bold;
+
+
+div input{
+   
+    height: auto;
+    width: 300px;
+    height: 30px;
 }
-div{
-    padding:20px ;
+#adresse{
+    height: 100px;
+}
+div label{
+    display: inline-block;
+    font-weight: bold;
+    padding: 30px 0px 20px 80px;
+    width: 250px;
+
+}
+select{
+    
+    margin-left: 80px;
+    font-size: 20px;
+    
+}
+section{
+    margin-left: 300px;
+    margin-top: 20px;
 }
 button{
-     center;
+     font-size: 20px;
+}
+/* appliquer un style sur les astérisque*/
+#case{
+    margin-left: 30px;
+    color: red;
+    font-size: 30px;
+}
+#titre{
+    color: red;
+    font-size: 30px;  
 }

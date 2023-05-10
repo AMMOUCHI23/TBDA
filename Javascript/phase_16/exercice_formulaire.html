@@ -10,44 +10,29 @@
 </head>
 
 <body>
-    <form action="" method="post">
+    <form action="traitement.php" method="post">
         <h3>Vous coordonnées:</h3>
-        <p>* Ces zones sont obligatoires pour envoyer le formulaire.</p>
+        <p><span id="titre">*</span> Ces zones sont obligatoires pour envoyer le formulaire.</p>
         <div> <label for="société">Société :</label>
-            <input type="text" minlength="1">
-        </div>
-        <div>
+            <input type="text" name="societe" id="societe" minlength="1"><span id="case">*</span><br>
             <label for="contact">Personne à contacté :</label>
-            <input type="text" minlength="1">
-        </div>
-        <div>
+            <input type="text" name="contact" id="contact" minlength="1"><span id="case">*</span><br>
             <label for="adresse">Adresse de l'entreprise :</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="code postal">Code Postal :</label>
-            <input type="number" maxlength="5">
-        </div>
-        <div>
-            <label for="ville">Ville :</label>
-            <input type="text" minlength="1">
-        </div>
-        <div>
-            <label for="mail">E-mail :</label>
-            <input type="email">
-        </div>
-    
-        <div>
-            <label for="telephone">Telephone :</label>
-            <input type="tel">
-        </div>
-        <div>
-            <label for="projet">Sélectionner l'enveronnement technique du projet :</label>
-            <input type="text"><br>
+            <textarea name="adresse" id="adresse" cols="30" rows="5"></textarea><br>
 
+            <label for="code">Code Postal :</label>
+            <input type="text" name="code" id="code" maxlength="5"><span id="case">*</span><br>
+            <label for="ville">Ville :</label>
+            <input type="text" name="ville" id="ville" minlength="1"><span id="case">*</span><br>
+            <label for="mail">E-mail :</label>
+            <input type="email" name="email" id="email"><span id="case">*</span><br>
+            <label for="telephone">Telephone :</label>
+            <input type="tel" name="telephone" id="telephone"><br>
+            <label for="projet">Sélectionner l'enveronnement technique du projet :</label>
+            <textarea name="projet" id="projet" cols="30" rows="5"></textarea><br>
             <select name="" id="">
-                <option value="" selected >Choisissez</option>
-                <option value="" >Access</option>
+                <option value="" selected>Choisissez</option>
+                <option value="">Access</option>
                 <option value="">Java</option>
                 <option value="">Delphi</option>
                 <option value="">Windev</option>
@@ -62,11 +47,15 @@
                 <option value="">Autres...</option>
             </select>
         </div>
-        <div>
+        <section>
             <button type="submit">Envoyer</button>
             <button type="reset">Effacer</button>
-        </div>
+        </section>
+
     </form>
+
+
+    <script src="exercice_formulaire.js"></script>
 </body>
 
 </html>

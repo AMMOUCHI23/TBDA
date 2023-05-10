@@ -11,9 +11,9 @@ b--;
 //Ajoutez à c la valeur de a
 c=c+a;
 //Inversez la valeur de d
-e=!d;
+d=!d;
 // Afficher les valeur b,c et e
 document.write("La valeur de b est: "+b+"<br>");
 document.write("La valeur de c est: "+c+"<br>");
-document.write("La valeur de e est: "+e+"<br>");
+document.write("L'inverse de d est: "+d+"<br>");
 

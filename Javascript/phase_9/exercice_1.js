@@ -11,7 +11,7 @@ function produit(x, y){
 
 produit(x, y);
 
-// La fonction qui calcule le produit de deux nombres
+// La fonction qui affiche l'image
 function afficheImg()
 {
 
