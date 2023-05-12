@@ -8,7 +8,7 @@ document.getElementById("forme1").addEventListener("submit", function (f) {
     var email = document.getElementById("email").value;
     var choix= document.getElementById("choix").value;
     var projet= document.getElementById("projet").value;
-    //var choix= selectBox[selectBox.selecteIndex].value;
+    //var choix=selectBox[selectBox.selecteIndex].value;
     if (choix=="Choisissez"){
         projet="";
     
