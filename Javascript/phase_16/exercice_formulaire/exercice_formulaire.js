@@ -6,6 +6,15 @@ document.getElementById("forme1").addEventListener("submit", function (f) {
     var code = document.getElementById("code").value;
     var ville = document.getElementById("ville").value;
     var email = document.getElementById("email").value;
+    var choix= document.getElementById("choix").value;
+    var projet= document.getElementById("projet").value;
+    //var choix= selectBox[selectBox.selecteIndex].value;
+    if (choix=="Choisissez"){
+        projet="";
+    
+    }else{
+        projet=choix;
+    }
     if (societe == "") {
         alert("veuillez remplire le champs societé");
 
