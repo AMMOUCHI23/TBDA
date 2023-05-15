@@ -21,7 +21,7 @@
             <textarea name="adresse" id="adresse" cols="30" rows="5"></textarea><br>
 
             <label for="code">Code Postal :</label>
-            <input type="text" name="code" id="code" maxlength="5"><span id="case">*</span><br>
+            <input type="text" name="code" id="code" maxlength="5" pattern="[0-9]{5}"><span id="case">*</span><br>
             <label for="ville">Ville :</label>
             <input type="text" name="ville" id="ville" minlength="1"><span id="case">*</span><br>
             <label for="mail">E-mail :</label>
@@ -29,8 +29,8 @@
             <label for="telephone">Telephone :</label>
             <input type="tel" name="telephone" id="telephone"><br>
             <label for="projet">Sélectionner l'enveronnement technique du projet :</label>
-            <textarea name="projet" id="projet" cols="30" rows="5" placeholder=""></textarea><br>
-            <select name="choix" id="choix">
+            <textarea name="projet" id="projet" cols="30" rows="5" placeholder="" ></textarea><br>
+            <select name="choix" id="choix" onchange="change();" >
                 <option value="" selected>Choisissez</option>
                 <option value="">Access</option>
                 <option value="">Java</option>

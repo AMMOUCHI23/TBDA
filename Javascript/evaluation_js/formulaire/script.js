@@ -45,5 +45,4 @@ document.getElementById("form2").addEventListener("submit", function (f) {
     if (accepter==""){
         document.getElementById("accepter_inv").innerHTML=accepter_inv;
     }
-
 });

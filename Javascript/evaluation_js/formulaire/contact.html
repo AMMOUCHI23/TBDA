@@ -38,8 +38,8 @@
                 <label for="naissance">Date de naissance* : </label><input type="date" id="naissance"
                     name="naissance"><br>
                 <p style="color: red; font-size: 15px;" id="naissance_inv"></p>
-                <label for="code">Code postal* : </label><input type="text" id="code" name="code"><br>
-                <p style="color: red; font-size: 15px;" id="code_inv"></p>
+                <label for="code">Code postal* : </label><input type="text" id="code" name="code" maxlength="5" pattern="[0-9]{5}"><br>
+                <p style="color: red; font-size: 15px;" id="code_inv" ></p>
                 <label for="adresse">Adresse : </label><input type="text" id="adresse" name="adresse"><br>
                 <label for="ville">Ville : </label><input type="text" id="ville" name="ville"><br>
                 <label for="email">Email* : </label><input type="text" id="email" name="email"
